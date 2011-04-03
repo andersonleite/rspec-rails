@@ -2,10 +2,6 @@ require "spec_helper"
 
 module RSpec::Rails
   describe ViewRendering do
-    let(:controller) do
-        controller.stub("class.respond_to?").and_return(true)
-    end
-
     let(:group) do
       RSpec::Core::ExampleGroup.describe do
         def controller
